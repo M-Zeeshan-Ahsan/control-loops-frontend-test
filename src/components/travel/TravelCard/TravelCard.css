@@ -1,0 +1,73 @@
+.travel-card {
+  position: relative;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.travel-info {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 6px;
+  font-family: var(--font-heading);
+}
+
+.travel-info strong {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.travel-info small {
+  display: block;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.price {
+  text-align: right;
+  font-family: var(--font-heading);
+}
+
+.price span {
+  display: block;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-bottom: 1px;
+}
+
+.price b {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-link {
+  top: 10px;
+  right: 10px;
+  bottom: auto;
+  width: 21px;
+  height: 21px;
+}
+
+@media (max-width: 900px) {
+  .travel-card {
+    height: 300px;
+  }
+}
+
+@media (max-width: 420px) {
+  .travel-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .travel-card {
+    height: 280px;
+  }
+}

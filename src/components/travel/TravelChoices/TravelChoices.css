@@ -1,0 +1,57 @@
+.travel-section {
+  padding: 50px 0px;
+}
+.travel-heading h2 {
+  color: #0e0700;
+  font-weight: 600;
+}
+
+.travel-heading p {
+  margin: 8px 0 14px;
+  color: #7a7a7a;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.tabs {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 8px 10px;
+  display: flex;
+  border: 1px solid #a7a8ae;
+  border-radius: 30px;
+  gap: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  border: 0;
+  border-radius: 15px;
+  background: transparent;
+  color: #0e0700;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 10px;
+}
+
+.tabs button.active {
+  background: rgba(128, 128, 128, 0.214);
+}
+.travel-grid {
+  margin-top: 21px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+@media (max-width: 767px) {
+  .travel-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .travel-grid {
+    grid-template-columns: 1fr;
+  }
+}

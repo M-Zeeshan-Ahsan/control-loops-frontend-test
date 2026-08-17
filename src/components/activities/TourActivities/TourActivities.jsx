@@ -1,4 +1,3 @@
-import { AdventureIcon, ArrowCornerIcon } from "../../../assets/icons";
 import ActivityCard from "../ActivityCard/ActivityCard";
 import "./TourActivities.css";
 import React from "react";
