@@ -1,16 +1,149 @@
-# React + Vite
+# Control loops Frontend Test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive assignment website built with React.js and Vite.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive landing page
+- Responsive navigation bar
+- Active navigation links
+- Smooth scrolling navigation
+- Hero section with search form
+- Popular destinations
+- Tour activities carousel
+- Travel choices with category filtering
+- Newsletter subscription form
+- Responsive desktop, tablet, and mobile layouts
+- Reusable React components
+- SVG assets and custom fonts
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- JavaScript
+- CSS
+- Swiper.js
+- SVG
+- Google Fonts
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/M-Zeeshan-Ahsan/control-loops-frontend-test
+```
+
+Navigate to the project directory:
+
+```bash
+cd cms-travelers
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Run the Project
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:5173
+```
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+├── assets/
+│   ├── images/
+│   └── icons/
+├── components/
+│   ├── layout/
+│   │   ├── Header/
+│   │   └── Footer/
+│   ├── hero/
+│   │   ├── Hero/
+│   │   └── SearchForm/
+│   ├── destinations/
+│   │   ├── PopularDestinations/
+│   │   └── DestinationCard/
+│   ├── activities/
+│   │   ├── TourActivities/
+│   │   └── ActivityCard/
+│   ├── travel/
+│   │   ├── TravelChoices/
+│   │   └── TravelCard/
+│   └── newsletter/
+│       └── Newsletter/
+├── pages/
+│   └── Home/
+├── styles/
+│   └── globals.css
+├── App.jsx
+└── main.jsx
+```
+
+## Component Architecture
+
+The project follows a reusable component-based architecture.
+
+- `Navbar` — Navigation and responsive mobile menu
+- `Hero` — Main hero section
+- `SearchForm` — Travel search form
+- `PopularDestinations` — Popular destination section
+- `DestinationCard` — Reusable destination card
+- `TourActivities` — Tour activity carousel
+- `ActivityCard` — Reusable activity card
+- `TravelChoices` — Travel category filtering and cards
+- `TravelCard` — Reusable travel card
+- `Newsletter` — Newsletter subscription section
+- `Footer` — Website footer
+
+## Responsive Design
+
+The website is optimized for:
+
+- Desktop
+- Tablet
+- Mobile
+
+Responsive behavior is handled through CSS media queries.
+
+## Notes
+
+The newsletter form currently uses a frontend-only submit handler for demonstration purposes.
+
+Travel and destination content is currently based on static frontend data.
+
+## Author
+
+Muhammad Zeeshan Ahsan
