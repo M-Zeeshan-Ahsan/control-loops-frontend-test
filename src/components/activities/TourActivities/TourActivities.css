@@ -1,0 +1,30 @@
+.activities-section {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+  background: #f0f1f9;
+}
+
+.activities-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered h2 {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 680px) {
+  .activities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 576px) {
+  .activities-grid {
+    grid-template-columns: 1fr;
+  }
+}

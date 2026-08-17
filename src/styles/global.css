@@ -6,14 +6,9 @@
   --font-body: "Poppins", sans-serif;
   --font-heading: "El Messiri", sans-serif;
   --navy: #3f4579;
-  --navy-dark: #32385f;
-  --text: #2f2f35;
-  --muted: #96969d;
-  --light: #f1f2fa;
-  --border: #e5e5e8;
   --white: #fff;
   --footer: #100a05;
-  --container: 1366px;
+  --container: 1200px;
 }
 a {
   text-decoration: none;

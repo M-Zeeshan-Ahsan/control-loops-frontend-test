@@ -1,0 +1,43 @@
+.destinations-section {
+  padding: 50px 0;
+}
+.section-heading {
+  margin-bottom: 18px;
+  font-family: var(--font-heading);
+}
+.section-heading span,
+.section-heading > span {
+  display: block;
+  color: var(--navy);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #38393e;
+  font-size: 26px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: 0.6fr 0.67fr 0.67fr;
+  grid-template-rows: 180px 280px;
+  gap: 20px;
+}
+
+@media (max-width: 900px) {
+  .destination-grid {
+    grid-template-rows: 110px 225px;
+  }
+}
+
+@media (max-width: 680px) {
+  .destination-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 190px 130px 190px;
+  }
+}
