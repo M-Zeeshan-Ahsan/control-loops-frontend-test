@@ -17,7 +17,18 @@
 .centered h2 {
   margin-bottom: 3px;
 }
-
+.swiper {
+  padding-bottom: 30px;
+}
+.activities-section .swiper-pagination-bullet-active {
+  background: #999 !important;
+}
+.swiper-wrapper {
+  padding-bottom: 25px !important;
+}
+.swiper-pagination {
+  bottom: 0 !important;
+}
 @media (max-width: 680px) {
   .activities-grid {
     grid-template-columns: 1fr 1fr;
