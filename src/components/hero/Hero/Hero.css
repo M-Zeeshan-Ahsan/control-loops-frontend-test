@@ -1,0 +1,133 @@
+.hero-section {
+  padding: 50px 0;
+}
+
+.hero {
+  position: relative;
+  overflow: visible;
+  border-radius: 18px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgb(25 25 25 / 88%) 0%,
+      rgb(14 19 24 / 52%) 50%,
+      rgb(0 0 0 / 52%) 100%
+    ),
+    url(/src/assets/images/hero-bg.svg);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 75px 55px 100px 55px;
+}
+
+.hero-content .highlight-pill {
+  display: inline-flex;
+  padding: 7px 12px;
+  margin-bottom: 26px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--white);
+  font-size: 10px;
+  backdrop-filter: blur(5px);
+}
+
+.hero .hero-content h1 {
+  margin: 0 0 30px;
+  font-family: var(--font-heading);
+  font-size: 46px;
+  line-height: 0.97;
+  letter-spacing: -0.7px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.hero-btn {
+  display: inline-flex;
+  height: 35px;
+  padding: 0 24px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background: var(--white);
+  color: black;
+  font-size: 10px;
+  font-weight: 500;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.hero-socials {
+  position: absolute;
+  top: 77px;
+  right: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-socials a {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.hero-socials span {
+  font-size: 7px;
+  letter-spacing: 1px;
+}
+
+.scroll-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 6px;
+  letter-spacing: 1px;
+  position: relative;
+  margin-top: 12px;
+}
+.scroll-indicator span {
+  position: absolute;
+  transform: rotate(-90deg) translateX(100%);
+  left: -10px;
+  bottom: 35px;
+}
+.scroll-indicator svg {
+  height: 140px;
+}
+
+@media (max-width: 900px) {
+}
+
+@media (max-width: 680px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero-socials {
+    right: 12px;
+    top: 55px;
+  }
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 25px 25px 50px 25px;
+  }
+  .hero .hero-content h1 {
+    font-size: 28px;
+  }
+  .highlight-pill {
+    font-size: 7px;
+  }
+}
