@@ -6,12 +6,13 @@ const links = ["Home", "Tours", "Destination", "About", "Blogs", "Contact"];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
+  const [activeLink, setActiveLink] = useState("Home");
   const handleToggleMenu = () => {
     setOpen((prev) => !prev);
   };
 
-  const handleCloseMenu = () => {
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
     setOpen(false);
   };
 
@@ -27,8 +28,8 @@ const Navbar = () => {
             <a
               key={link}
               href={`#${link.toLowerCase()}`}
-              className={index === 0 ? "active" : ""}
-              onClick={handleCloseMenu}
+              className={activeLink === link ? "active" : ""}
+              onClick={() => handleLinkClick(link)}
             >
               {link}
             </a>
