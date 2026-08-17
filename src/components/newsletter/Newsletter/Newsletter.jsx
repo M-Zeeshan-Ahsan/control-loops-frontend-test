@@ -2,6 +2,10 @@ import mailicon from "../../../assets/images/mail.svg";
 import "./Newsletter.css";
 import React from "react";
 const Newsletter = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Thanks for subscribing!");
+  };
   return (
     <section className="newsletter-section">
       <div className="container">
@@ -10,13 +14,7 @@ const Newsletter = () => {
             <span>Let's Explore the World</span>
             <h2>Get Special Offers in Your Inbox</h2>
           </div>
-          <form
-            className="newsletter-form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              alert("Thanks for subscribing!");
-            }}
-          >
+          <form className="newsletter-form" onSubmit={handleSubmit}>
             <input
               type="email"
               required

@@ -1,0 +1,137 @@
+.footer {
+  padding: 45px 0 22px;
+  color: rgba(255, 255, 255, 0.72);
+  background: black;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.45fr 1fr 1fr 1.25fr;
+  gap: 55px;
+}
+
+.footer-logo {
+  font-family: var(--font-logo) !important;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer-logo span {
+  color: #9da7ff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.footer-contact {
+  margin-top: 19px;
+  display: grid;
+  gap: 8px;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 11px;
+  color: #daeaea;
+}
+.footer-contact svg {
+  width: 16px;
+}
+.footer-contact svg path {
+  fill: #7c86d0;
+}
+
+.socials {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.socials a {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #daeaea;
+  background: #3289dc;
+}
+.socials .facebook {
+  background-color: #1877f2;
+}
+
+.socials .twitter {
+  background-color: #1da1f2;
+}
+
+.socials .linkedin {
+  background-color: #0a66c2;
+}
+
+.socials .youtube {
+  background-color: #ff0000;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-column h4 {
+  margin: 1px 0 8px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.footer-column a {
+  color: #daeaea;
+  font-size: 11px;
+}
+
+.package-item {
+  display: flex;
+  gap: 7px;
+  line-height: 1.4;
+}
+
+.package-item img {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.package-item span {
+  font-size: 11px;
+}
+
+.package-item small {
+  color: #daeaea;
+  font-size: 11px;
+}
+.package-item small span {
+  color: #9da7ff;
+}
+.footer-bottom {
+  margin-top: 35px;
+  display: flex;
+  gap: 25px;
+  color: #daeaea;
+  font-size: 11px;
+}
+
+@media (max-width: 680px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

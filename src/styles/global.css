@@ -7,8 +7,10 @@
   --font-heading: "El Messiri", sans-serif;
   --navy: #3f4579;
   --white: #fff;
-  --footer: #100a05;
   --container: 1200px;
+}
+html {
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
